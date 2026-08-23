@@ -1,0 +1,2333 @@
+/* =========================================================
+   1. GLOBAL RESET & BASE STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   2. HEADER / HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #1f2937,
+            #374151
+        );
+
+    color: white;
+}
+
+
+/* Main hero content */
+
+.hero-content {
+    max-width: 850px;
+    width: 100%;
+}
+
+
+/* Small "JQUERY PRACTICE" badge */
+
+.badge {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: #d1d5db;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+    letter-spacing: -1px;
+}
+
+
+/* Hero description */
+
+.hero p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #d1d5db;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   3. TOPIC BADGES
+========================================================= */
+
+.topic-list {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+
+.topic-list span {
+    padding: 8px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #e5e7eb;
+
+    font-size: 13px;
+
+    transition: 0.25s ease;
+}
+
+
+.topic-list span:hover {
+    background: rgba(255, 255, 255, 0.16);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   4. MAIN CONTAINER
+========================================================= */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+}
+
+
+/* =========================================================
+   5. RESPONSIVE HEADER
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 320px;
+
+        padding: 45px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .topic-list {
+        gap: 7px;
+    }
+
+
+    .topic-list span {
+        font-size: 12px;
+
+        padding: 6px 11px;
+    }
+
+}
+/* =========================================================
+   6. DEMO SECTION
+========================================================= */
+
+.demo-section {
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   7. SECTION HEADING
+========================================================= */
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 22px;
+}
+
+
+.section-heading h2 {
+    font-size: 27px;
+
+    color: #111827;
+
+    margin-bottom: 4px;
+}
+
+
+.section-heading p {
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   8. SECTION NUMBER
+========================================================= */
+
+.section-number {
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(17, 24, 39, 0.15);
+}
+
+
+/* =========================================================
+   9. DEMO CARD
+========================================================= */
+
+.demo-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.demo-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* =========================================================
+   10. DEMO LABEL
+========================================================= */
+
+.demo-label {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+
+    background: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   11. BUTTON GROUP
+========================================================= */
+
+.button-group {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   12. COMMON BUTTON
+========================================================= */
+
+.button-group button,
+.demo-card button {
+    border: none;
+
+    outline: none;
+
+    padding: 10px 17px;
+
+    border-radius: 9px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.button-group button:hover,
+.demo-card button:hover {
+    background: #374151;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(17, 24, 39, 0.18);
+}
+
+
+.button-group button:active,
+.demo-card button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   13. DEMO OUTPUT
+========================================================= */
+
+.demo-output {
+    margin-top: 20px;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+.demo-output span {
+    color: #475569;
+}
+
+
+.demo-output code {
+    display: inline-block;
+
+    margin: 3px;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    background: #e5e7eb;
+
+    color: #334155;
+
+    font-family: monospace;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   14. COMMON DEMO BOX
+========================================================= */
+
+.demo-box {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    background: #f1f5f9;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s ease;
+}
+
+
+.demo-box h3 {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+}
+
+
+.demo-box p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.demo-box-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   15. RESPONSIVE CARDS
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+
+        margin: 35px auto;
+    }
+
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+
+    .section-number {
+        min-width: 42px;
+
+        height: 42px;
+
+        border-radius: 11px;
+    }
+
+
+    .demo-card {
+        padding: 20px;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+
+    .button-group button,
+    .demo-card button {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   16. SELECTOR DEMO
+========================================================= */
+
+.selector-demo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.selector-demo p {
+    padding: 15px 18px;
+
+    margin: 0;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    transition:
+        0.25s ease;
+}
+
+
+.selector-demo p strong {
+    color: #111827;
+}
+
+
+/* =========================================================
+   Selector buttons
+========================================================= */
+
+#select-id-btn {
+    background: #2563eb;
+}
+
+
+#select-class-btn {
+    background: #7c3aed;
+}
+
+
+#select-tag-btn {
+    background: #059669;
+}
+
+
+#select-id-btn:hover,
+#select-class-btn:hover,
+#select-tag-btn:hover {
+    filter: brightness(1.08);
+}
+
+
+/* =========================================================
+   Selector output
+========================================================= */
+
+#selector-output {
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   17. CLICK EVENT DEMO
+========================================================= */
+
+.click-demo {
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.click-icon {
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    font-size: 32px;
+}
+
+
+#click-heading {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+
+    color: #111827;
+}
+
+
+#click-message {
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+#click-btn {
+    background: #2563eb;
+}
+
+
+#reset-click-btn {
+    background: #64748b;
+}
+
+
+/* =========================================================
+   Click button interaction
+========================================================= */
+
+#click-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#reset-click-btn:hover {
+    background: #475569;
+}
+
+
+/* =========================================================
+   18. MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .selector-demo p {
+        font-size: 14px;
+
+        padding: 13px 14px;
+    }
+
+
+    .click-demo {
+        padding: 15px;
+    }
+
+
+    #click-heading {
+        font-size: 21px;
+    }
+
+}
+/* =========================================================
+   19. HIDE / SHOW / TOGGLE DEMO
+========================================================= */
+
+.visibility-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 230px;
+
+    padding: 20px;
+}
+
+
+#visibility-box {
+    max-width: 500px;
+
+    background: #eef2ff;
+
+    border: 1px solid #c7d2fe;
+
+    color: #3730a3;
+}
+
+
+#visibility-box h3 {
+    color: #312e81;
+}
+
+
+#visibility-box p {
+    color: #6366f1;
+}
+
+
+#hide-demo-btn {
+    background: #dc2626;
+}
+
+
+#show-demo-btn {
+    background: #16a34a;
+}
+
+
+#toggle-demo-btn {
+    background: #7c3aed;
+}
+
+
+#hide-demo-btn:hover {
+    background: #b91c1c;
+}
+
+
+#show-demo-btn:hover {
+    background: #15803d;
+}
+
+
+#toggle-demo-btn:hover {
+    background: #6d28d9;
+}
+
+
+/* =========================================================
+   20. FADE DEMO
+========================================================= */
+
+.fade-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 260px;
+
+    padding: 20px;
+}
+
+
+#fade-box {
+    max-width: 500px;
+
+    background: #ecfdf5;
+
+    border: 1px solid #a7f3d0;
+
+    color: #065f46;
+}
+
+
+#fade-box h3 {
+    color: #064e3b;
+}
+
+
+#fade-box p {
+    color: #047857;
+}
+
+
+/* =========================================================
+   Fade buttons
+========================================================= */
+
+#fade-out-btn {
+    background: #dc2626;
+}
+
+
+#fade-toggle-btn {
+    background: #2563eb;
+}
+
+
+#fade-to-btn {
+    background: #d97706;
+}
+
+
+#fade-out-btn:hover {
+    background: #b91c1c;
+}
+
+
+#fade-toggle-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#fade-to-btn:hover {
+    background: #b45309;
+}
+
+
+/* =========================================================
+   21. EFFECT STATUS
+========================================================= */
+
+#fade-box,
+#visibility-box {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+#fade-box:hover,
+#visibility-box:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   22. EFFECT DEMO RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .visibility-demo,
+    .fade-demo {
+        min-height: 200px;
+
+        padding: 10px;
+    }
+
+
+    #visibility-box,
+    #fade-box {
+        padding: 22px;
+    }
+
+}
+/* =========================================================
+   23. SLIDE DEMO
+========================================================= */
+
+.slide-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 260px;
+
+    padding: 20px;
+}
+
+
+/* Main slide box */
+
+#slide-box {
+    max-width: 500px;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+
+    color: #9a3412;
+}
+
+
+#slide-box h3 {
+    color: #7c2d12;
+}
+
+
+#slide-box p {
+    color: #c2410c;
+}
+
+
+/* =========================================================
+   Slide buttons
+========================================================= */
+
+#slide-up-btn {
+    background: #dc2626;
+}
+
+
+#slide-down-btn {
+    background: #16a34a;
+}
+
+
+#slide-toggle-btn {
+    background: #7c3aed;
+}
+
+
+#slide-up-btn:hover {
+    background: #b91c1c;
+}
+
+
+#slide-down-btn:hover {
+    background: #15803d;
+}
+
+
+#slide-toggle-btn:hover {
+    background: #6d28d9;
+}
+
+
+/* =========================================================
+   24. CUSTOM ANIMATE DEMO
+========================================================= */
+
+.animate-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 300px;
+
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+
+/* Animated box */
+
+#animate-box {
+    width: 260px;
+
+    min-height: 170px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    background: #eff6ff;
+
+    border: 2px solid #93c5fd;
+
+    border-radius: 18px;
+
+    color: #1e3a8a;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+#animate-box h3 {
+    color: #1e40af;
+
+    margin-bottom: 7px;
+}
+
+
+#animate-box p {
+    color: #3b82f6;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   Animate buttons
+========================================================= */
+
+#animate-btn {
+    background: #2563eb;
+}
+
+
+#animate-reset-btn {
+    background: #64748b;
+}
+
+
+#animate-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#animate-reset-btn:hover {
+    background: #475569;
+}
+
+
+/* =========================================================
+   Animation icon
+========================================================= */
+
+#animate-box .demo-box-icon {
+    transition: transform 0.3s ease;
+}
+
+
+#animate-box:hover .demo-box-icon {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   25. SLIDE + ANIMATE RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .slide-demo,
+    .animate-demo {
+        min-height: 220px;
+
+        padding: 10px;
+    }
+
+
+    #slide-box {
+        padding: 22px;
+    }
+
+
+    #animate-box {
+        width: 220px;
+
+        min-height: 150px;
+
+        padding: 20px;
+    }
+
+}
+/* =========================================================
+   26. DOM MANIPULATION DEMO
+========================================================= */
+
+.dom-demo {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   text() DEMO
+========================================================= */
+
+#text-demo {
+    margin: 0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    color: #475569;
+
+    font-size: 17px;
+
+    transition: 0.25s ease;
+}
+
+
+#text-demo strong {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   html() DEMO
+========================================================= */
+
+#html-demo {
+    margin: 0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    color: #475569;
+
+    font-size: 17px;
+
+    transition: 0.25s ease;
+}
+
+
+#html-demo strong {
+    color: #7c3aed;
+}
+
+
+/* =========================================================
+   DOM ACTION BUTTONS
+========================================================= */
+
+#get-text-btn,
+#get-html-btn {
+    background: #64748b;
+}
+
+
+#set-text-btn {
+    background: #2563eb;
+}
+
+
+#set-html-btn {
+    background: #7c3aed;
+}
+
+
+#get-text-btn:hover,
+#get-html-btn:hover {
+    background: #475569;
+}
+
+
+#set-text-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#set-html-btn:hover {
+    background: #6d28d9;
+}
+
+
+/* =========================================================
+   27. VALUE DEMO
+========================================================= */
+
+.form-demo {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.form-demo label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    text-align: left;
+}
+
+
+#value-input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    color: #1f2937;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#value-input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+#get-value-btn {
+    background: #2563eb;
+}
+
+
+#set-value-btn {
+    background: #059669;
+}
+
+
+#get-value-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#set-value-btn:hover {
+    background: #047857;
+}
+
+
+/* =========================================================
+   28. ATTRIBUTE DEMO
+========================================================= */
+
+.attribute-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+}
+
+
+#demo-link {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+#demo-link:hover {
+    background: #dbeafe;
+
+    transform: translateY(-2px);
+}
+
+
+#get-attr-btn {
+    background: #64748b;
+}
+
+
+#change-attr-btn {
+    background: #d97706;
+}
+
+
+#get-attr-btn:hover {
+    background: #475569;
+}
+
+
+#change-attr-btn:hover {
+    background: #b45309;
+}
+
+
+/* =========================================================
+   29. DOM OUTPUT
+========================================================= */
+
+#text-output,
+#html-output,
+#value-output,
+#attr-output {
+    min-height: 48px;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   DOM RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .dom-demo {
+        padding: 18px;
+    }
+
+
+    #text-demo,
+    #html-demo {
+        font-size: 15px;
+
+        padding: 16px;
+    }
+
+
+    .attribute-demo {
+        padding: 18px;
+    }
+
+}
+/* =========================================================
+   30. CLASS MANIPULATION DEMO
+========================================================= */
+
+.class-demo-area {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 270px;
+
+    padding: 20px;
+}
+
+
+/* Default box */
+
+#class-box {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 2px dashed #cbd5e1;
+
+    color: #475569;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+#class-box h3 {
+    margin-bottom: 8px;
+
+    color: #334155;
+}
+
+
+#class-box p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   Class added by jQuery
+========================================================= */
+
+.highlight-box {
+    background: #ede9fe !important;
+
+    border: 2px solid #8b5cf6 !important;
+
+    color: #5b21b6 !important;
+
+    box-shadow:
+        0 12px 30px rgba(124, 58, 237, 0.18);
+
+    transform: scale(1.02);
+}
+
+
+.highlight-box h3 {
+    color: #5b21b6 !important;
+}
+
+
+.highlight-box p {
+    color: #7c3aed !important;
+}
+
+
+/* =========================================================
+   Class buttons
+========================================================= */
+
+#add-class-btn {
+    background: #16a34a;
+}
+
+
+#remove-class-btn {
+    background: #dc2626;
+}
+
+
+#toggle-class-btn {
+    background: #7c3aed;
+}
+
+
+#add-class-btn:hover {
+    background: #15803d;
+}
+
+
+#remove-class-btn:hover {
+    background: #b91c1c;
+}
+
+
+#toggle-class-btn:hover {
+    background: #6d28d9;
+}
+
+
+/* =========================================================
+   31. CSS() DEMO
+========================================================= */
+
+.css-demo-area {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 270px;
+
+    padding: 20px;
+}
+
+
+#css-box {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    background: #e0f2fe;
+
+    border: 2px solid #7dd3fc;
+
+    color: #075985;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-radius 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+#css-box h3 {
+    margin-bottom: 8px;
+
+    color: #0c4a6e;
+}
+
+
+#css-box p {
+    color: #0369a1;
+
+    font-size: 14px;
+}
+
+
+/* CSS buttons */
+
+#get-css-btn {
+    background: #64748b;
+}
+
+
+#change-css-btn {
+    background: #0891b2;
+}
+
+
+#reset-css-btn {
+    background: #dc2626;
+}
+
+
+#get-css-btn:hover {
+    background: #475569;
+}
+
+
+#change-css-btn:hover {
+    background: #0e7490;
+}
+
+
+#reset-css-btn:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================================================
+   32. KEYBOARD EVENT DEMO
+========================================================= */
+
+.keyboard-demo {
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.keyboard-icon {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+
+.keyboard-demo h3 {
+    font-size: 24px;
+
+    color: #111827;
+
+    margin-bottom: 7px;
+}
+
+
+.keyboard-demo > p {
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* Keyboard controlled message */
+
+.keyboard-message {
+    max-width: 600px;
+
+    margin: 25px auto;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    color: #166534;
+
+    font-weight: 600;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   Keyboard keys
+========================================================= */
+
+.key-display {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.key {
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #111827;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+    box-shadow:
+        0 4px 0 #374151;
+}
+
+
+.key-display span {
+    margin-right: 12px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   Keyboard output
+========================================================= */
+
+#key-output strong {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   Keyboard responsive
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .class-demo-area,
+    .css-demo-area {
+        min-height: 220px;
+
+        padding: 10px;
+    }
+
+
+    #class-box,
+    #css-box {
+        padding: 22px;
+    }
+
+
+    .keyboard-demo {
+        padding: 15px;
+    }
+
+
+    .keyboard-demo h3 {
+        font-size: 21px;
+    }
+
+
+    .key-display span {
+        margin-right: 0;
+    }
+
+}
+/* =========================================================
+   33. FORM EVENTS DEMO
+========================================================= */
+
+.form-events-demo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+/* Individual event block */
+
+.form-event-item {
+    padding: 20px;
+
+    border-radius: 13px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.form-event-item:focus-within {
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* Event title + description */
+
+.event-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 13px;
+}
+
+
+.event-icon {
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    font-size: 20px;
+}
+
+
+.event-info h3 {
+    font-size: 16px;
+
+    color: #111827;
+
+    margin-bottom: 2px;
+}
+
+
+.event-info p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   Demo inputs
+========================================================= */
+
+.demo-input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: white;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.demo-input::placeholder {
+    color: #9ca3af;
+}
+
+
+.demo-input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================================
+   34. SIGNUP FORM
+========================================================= */
+
+.signup-form {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+/* Form group */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+
+.form-group > label {
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Form inputs */
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: white;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================================
+   35. RADIO BUTTONS
+========================================================= */
+
+.radio-group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.radio-group label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+.radio-group input {
+    accent-color: #2563eb;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   Submit button
+========================================================= */
+
+#submit-btn {
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#submit-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.2);
+}
+
+
+#submit-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   36. FORM OUTPUT
+========================================================= */
+
+#form-output {
+    margin-top: 20px;
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   37. FOOTER
+========================================================= */
+
+body::after {
+    content:
+        "jQuery Learning Playground • Built for Practice";
+
+    display: block;
+
+    padding: 35px 20px;
+
+    margin-top: 60px;
+
+    background: #111827;
+
+    color: #9ca3af;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   38. FINAL MOBILE RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .form-event-item {
+        padding: 17px;
+    }
+
+
+    .event-info {
+        align-items: flex-start;
+    }
+
+
+    .signup-form {
+        padding: 20px;
+    }
+
+
+    .radio-group {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    body::after {
+        margin-top: 40px;
+
+        padding: 28px 15px;
+
+        font-size: 12px;
+    }
+
+}
+/* =========================================================
+   PART 9 — AJAX
+========================================================= */
+
+.ajax-section {
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   AJAX CARD
+========================================================= */
+
+.ajax-card {
+    margin-top: 22px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+.ajax-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.ajax-icon {
+    width: 58px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.post-icon {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+.ajax-card-header h3 {
+    margin-bottom: 4px;
+
+    color: #111827;
+
+    font-size: 19px;
+}
+
+
+.ajax-card-header p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   AJAX CODE EXPLANATION
+========================================================= */
+
+.code-explanation {
+    margin-bottom: 18px;
+
+    padding: 14px 16px;
+
+    border-radius: 9px;
+
+    background: #111827;
+
+    overflow-x: auto;
+}
+
+
+.code-explanation code {
+    color: #e5e7eb;
+
+    font-family: monospace;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   AJAX BUTTONS
+========================================================= */
+
+#ajax-get-btn {
+    background: #2563eb;
+}
+
+
+#ajax-post-btn {
+    background: #16a34a;
+}
+
+
+#ajax-get-btn:hover {
+    background: #1d4ed8;
+}
+
+
+#ajax-post-btn:hover {
+    background: #15803d;
+}
+
+
+/* =========================================================
+   AJAX OUTPUT
+========================================================= */
+
+.ajax-output {
+    margin-top: 18px;
+
+    min-height: 70px;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+.ajax-output strong {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   AJAX RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ajax-card {
+        padding: 18px;
+    }
+
+
+    .ajax-card-header {
+        align-items: flex-start;
+    }
+
+
+    .code-explanation code {
+        font-size: 12px;
+    }
+
+}

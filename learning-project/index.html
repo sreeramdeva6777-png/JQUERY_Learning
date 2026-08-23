@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jQuery Learning Playground</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                JQUERY PRACTICE
+            </span>
+
+            <h1>
+                jQuery Learning Playground
+            </h1>
+
+            <p>
+                An interactive demonstration of the
+                jQuery concepts I have learned.
+            </p>
+
+            <div class="topic-list">
+
+                <span>Selectors</span>
+                <span>Events</span>
+                <span>Effects</span>
+                <span>DOM</span>
+                <span>CSS</span>
+                <span>Forms</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="container">
+
+
+        <!-- =================================================
+             PART 1 WILL COME HERE
+        ================================================== -->
+
+        <!-- =====================================================
+             1. JQUERY SELECTORS
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <div>
+                    <h2>jQuery Selectors</h2>
+
+                    <p>
+                        Select HTML elements using ID, class and tag selectors.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    LIVE DEMO
+                </div>
+
+
+                <div class="selector-demo">
+
+                    <p id="selector-id">
+                        I am selected using an <strong>ID selector</strong>.
+                    </p>
+
+                    <p class="selector-class">
+                        I am selected using a <strong>class selector</strong>.
+                    </p>
+
+                    <p>
+                        I am selected using a <strong>tag selector</strong>.
+                    </p>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="select-id-btn">
+                        Select by ID
+                    </button>
+
+                    <button id="select-class-btn">
+                        Select by Class
+                    </button>
+
+                    <button id="select-tag-btn">
+                        Select by Tag
+                    </button>
+
+                </div>
+
+
+                <div class="demo-output" id="selector-output">
+
+                    Select an option above to see the selector in action.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             2. CLICK EVENT
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h2>Click Event</h2>
+
+                    <p>
+                        Use jQuery click() to respond when a button is clicked.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    CLICK INTERACTION
+                </div>
+
+
+                <div class="click-demo">
+
+                    <div class="click-icon">
+                        👆
+                    </div>
+
+                    <h3 id="click-heading">
+                        Click the button below
+                    </h3>
+
+                    <p id="click-message">
+                        Nothing has happened yet.
+                    </p>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="click-btn">
+                        Click Me
+                    </button>
+
+                    <button id="reset-click-btn">
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             3. HIDE / SHOW / TOGGLE
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h2>Hide, Show & Toggle</h2>
+
+                    <p>
+                        Control the visibility of elements using
+                        hide(), show() and toggle().
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    VISIBILITY DEMO
+                </div>
+
+
+                <div class="visibility-demo">
+
+                    <div
+                        id="visibility-box"
+                        class="demo-box"
+                    >
+
+                        <div class="demo-box-icon">
+                            👁️
+                        </div>
+
+                        <h3>
+                            I am visible
+                        </h3>
+
+                        <p>
+                            Use the buttons below to hide,
+                            show or toggle me.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="hide-demo-btn">
+                        Hide
+                    </button>
+
+                    <button id="show-demo-btn">
+                        Show
+                    </button>
+
+                    <button id="toggle-demo-btn">
+                        Toggle
+                    </button>
+
+                </div>
+
+
+                <div class="demo-output">
+
+                    <span>
+                        jQuery methods:
+                    </span>
+
+                    <code>
+                        hide()
+                    </code>
+
+                    <code>
+                        show()
+                    </code>
+
+                    <code>
+                        toggle()
+                    </code>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             4. FADE EFFECTS
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h2>Fade Effects</h2>
+
+                    <p>
+                        Create smooth fading effects using
+                        fadeOut(), fadeToggle() and fadeTo().
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    FADE ANIMATION
+                </div>
+
+
+                <div class="fade-demo">
+
+                    <div
+                        id="fade-box"
+                        class="demo-box fade-box"
+                    >
+
+                        <div class="demo-box-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Fade Me
+                        </h3>
+
+                        <p>
+                            Watch how my opacity changes
+                            using jQuery effects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="fade-out-btn">
+                        fadeOut()
+                    </button>
+
+                    <button id="fade-toggle-btn">
+                        fadeToggle()
+                    </button>
+
+                    <button id="fade-to-btn">
+                        fadeTo(0.5)
+                    </button>
+
+                </div>
+
+
+                <div class="demo-output">
+
+                    <span>
+                        Try:
+                    </span>
+
+                    <code>
+                        fadeOut()
+                    </code>
+
+                    <code>
+                        fadeToggle()
+                    </code>
+
+                    <code>
+                        fadeTo("slow", 0.5)
+                    </code>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             5. SLIDE EFFECTS
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div>
+
+                    <h2>Slide Effects</h2>
+
+                    <p>
+                        Create sliding animations using
+                        slideUp(), slideDown() and slideToggle().
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    SLIDE ANIMATION
+                </div>
+
+
+                <div class="slide-demo">
+
+                    <div
+                        id="slide-box"
+                        class="demo-box slide-box"
+                    >
+
+                        <div class="demo-box-icon">
+                            ↕️
+                        </div>
+
+                        <h3>
+                            Slide Me
+                        </h3>
+
+                        <p>
+                            This box will slide up and down
+                            using jQuery.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="slide-up-btn">
+                        slideUp()
+                    </button>
+
+                    <button id="slide-down-btn">
+                        slideDown()
+                    </button>
+
+                    <button id="slide-toggle-btn">
+                        slideToggle()
+                    </button>
+
+                </div>
+
+
+                <div class="demo-output">
+
+                    <span>
+                        jQuery methods:
+                    </span>
+
+                    <code>
+                        slideUp()
+                    </code>
+
+                    <code>
+                        slideDown()
+                    </code>
+
+                    <code>
+                        slideToggle("slow")
+                    </code>
+
+                </div>
+
+            </div>
+
+        </section>
+                    <!-- =====================================================
+             6. CUSTOM ANIMATION - animate()
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    06
+                </span>
+
+                <div>
+
+                    <h2>Custom Animation</h2>
+
+                    <p>
+                        Use animate() to smoothly change numeric
+                        CSS properties such as width, height and font-size.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    CUSTOM ANIMATION
+                </div>
+
+
+                <div class="animate-demo">
+
+                    <div
+                        id="animate-box"
+                        class="demo-box animate-box"
+                    >
+
+                        <div class="demo-box-icon">
+                            🎬
+                        </div>
+
+                        <h3>
+                            Animate Me
+                        </h3>
+
+                        <p>
+                            My size will change smoothly.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="animate-btn">
+                        Start Animation
+                    </button>
+
+                    <button id="animate-reset-btn">
+                        Reset
+                    </button>
+
+                </div>
+
+
+                <div class="demo-output">
+
+                    <span>
+                        Properties being animated:
+                    </span>
+
+                    <code>
+                        width
+                    </code>
+
+                    <code>
+                        height
+                    </code>
+
+                    <code>
+                        fontSize
+                    </code>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             7. DOM MANIPULATION - text() & html()
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    07
+                </span>
+
+                <div>
+
+                    <h2>DOM Manipulation</h2>
+
+                    <p>
+                        Read and modify element content using
+                        text() and html().
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= TEXT() ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    text()
+                </div>
+
+
+                <div class="dom-demo">
+
+                    <p id="text-demo">
+
+                        This is the
+                        <strong>original text</strong>.
+
+                    </p>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="get-text-btn">
+                        Get Text
+                    </button>
+
+                    <button id="set-text-btn">
+                        Change Text
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="text-output"
+                    class="demo-output"
+                >
+
+                    Click "Get Text" to read the paragraph.
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HTML() ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    html()
+                </div>
+
+
+                <div class="dom-demo">
+
+                    <p id="html-demo">
+
+                        Hello
+                        <strong>jQuery</strong>
+                        Developer!
+
+                    </p>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="get-html-btn">
+                        Get HTML
+                    </button>
+
+                    <button id="set-html-btn">
+                        Change HTML
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="html-output"
+                    class="demo-output"
+                >
+
+                    Click "Get HTML" to see the HTML content.
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             8. DOM MANIPULATION - val() & attr()
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    08
+                </span>
+
+                <div>
+
+                    <h2>Values & Attributes</h2>
+
+                    <p>
+                        Get and modify form values using val()
+                        and HTML attributes using attr().
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= VAL() ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    val()
+                </div>
+
+
+                <div class="form-demo">
+
+                    <label for="value-input">
+                        Enter a value
+                    </label>
+
+                    <input
+                        type="text"
+                        id="value-input"
+                        value="Hello jQuery"
+                        placeholder="Type something..."
+                    >
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="get-value-btn">
+                        Get Value
+                    </button>
+
+                    <button id="set-value-btn">
+                        Change Value
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="value-output"
+                    class="demo-output"
+                >
+
+                    Click "Get Value" to read the input value.
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ATTR() ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    attr()
+                </div>
+
+
+                <div class="attribute-demo">
+
+                    <a
+                        id="demo-link"
+                        href="https://www.google.com"
+                        target="_blank"
+                    >
+                        Open Demo Link
+                    </a>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="get-attr-btn">
+                        Get href
+                    </button>
+
+                    <button id="change-attr-btn">
+                        Change href
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="attr-output"
+                    class="demo-output"
+                >
+
+                    Click "Get href" to see the current
+                    href attribute.
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             9. CLASS & CSS MANIPULATION
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    09
+                </span>
+
+                <div>
+
+                    <h2>Classes & CSS Manipulation</h2>
+
+                    <p>
+                        Dynamically add, remove and toggle CSS classes,
+                        and change CSS properties using jQuery.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CLASS METHODS ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    addClass() • removeClass() • toggleClass()
+                </div>
+
+
+                <div class="class-demo-area">
+
+                    <div
+                        id="class-box"
+                        class="class-demo-box"
+                    >
+
+                        <div class="class-demo-icon">
+                            🎨
+                        </div>
+
+                        <h3>
+                            Class Manipulation
+                        </h3>
+
+                        <p>
+                            Click the buttons to add, remove or
+                            toggle my CSS class.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="add-class-btn">
+                        addClass()
+                    </button>
+
+                    <button id="remove-class-btn">
+                        removeClass()
+                    </button>
+
+                    <button id="toggle-class-btn">
+                        toggleClass()
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="class-output"
+                    class="demo-output"
+                >
+
+                    Try one of the class methods above.
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CSS() ================= -->
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    css()
+                </div>
+
+
+                <div class="css-demo-area">
+
+                    <div
+                        id="css-box"
+                        class="css-demo-box"
+                    >
+
+                        <h3>
+                            CSS Manipulation
+                        </h3>
+
+                        <p>
+                            My CSS properties can be changed
+                            dynamically using jQuery.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button id="get-css-btn">
+                        Get Background Color
+                    </button>
+
+                    <button id="change-css-btn">
+                        Change CSS
+                    </button>
+
+                    <button id="reset-css-btn">
+                        Reset CSS
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="css-output"
+                    class="demo-output"
+                >
+
+                    Click "Get Background Color" to read
+                    the current CSS value.
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             10. KEYBOARD EVENTS
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    10
+                </span>
+
+                <div>
+
+                    <h2>Keyboard Events</h2>
+
+                    <p>
+                        Detect keyboard input using the keydown()
+                        event and respond to specific keys.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    KEYBOARD INTERACTION
+                </div>
+
+
+                <div class="keyboard-demo">
+
+                    <div class="keyboard-icon">
+                        ⌨️
+                    </div>
+
+                    <h3>
+                        Press a Key
+                    </h3>
+
+                    <p>
+                        Press <strong>H</strong> to hide the message
+                        and <strong>S</strong> to show it.
+                    </p>
+
+
+                    <div
+                        id="keyboard-message"
+                        class="keyboard-message"
+                    >
+
+                        I am controlled by your keyboard!
+
+                    </div>
+
+
+                    <div class="key-display">
+
+                        <div class="key">
+                            H
+                        </div>
+
+                        <span>
+                            Hide
+                        </span>
+
+
+                        <div class="key">
+                            S
+                        </div>
+
+                        <span>
+                            Show
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="key-output"
+                    class="demo-output"
+                >
+
+                    Last pressed key:
+                    <strong>None</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             11. FORM EVENTS
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    11
+                </span>
+
+                <div>
+
+                    <h2>Form Events</h2>
+
+                    <p>
+                        Handle focus, blur and change events
+                        on form inputs using jQuery.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    FORM EVENT DEMO
+                </div>
+
+
+                <div class="form-events-demo">
+
+
+                    <!-- ================= FOCUS ================= -->
+
+                    <div class="form-event-item">
+
+                        <div class="event-info">
+
+                            <span class="event-icon">
+                                🎯
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    focus()
+                                </h3>
+
+                                <p>
+                                    Click inside the input.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            id="focus-input"
+                            class="demo-input"
+                            placeholder="Click inside me..."
+                        >
+
+                    </div>
+
+
+
+                    <!-- ================= BLUR ================= -->
+
+                    <div class="form-event-item">
+
+                        <div class="event-info">
+
+                            <span class="event-icon">
+                                👋
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    blur()
+                                </h3>
+
+                                <p>
+                                    Click inside and then leave the input.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            id="blur-input"
+                            class="demo-input"
+                            placeholder="Focus and then leave me..."
+                        >
+
+                    </div>
+
+
+
+                    <!-- ================= CHANGE ================= -->
+
+                    <div class="form-event-item">
+
+                        <div class="event-info">
+
+                            <span class="event-icon">
+                                🔄
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    change()
+                                </h3>
+
+                                <p>
+                                    Change the value and check the output.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            id="change-input"
+                            class="demo-input"
+                            placeholder="Type something..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="change-output"
+                    class="demo-output"
+                >
+
+                    Change the input value to see the result here.
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =====================================================
+             12. FORM SUBMIT EVENT
+        ====================================================== -->
+
+        <section class="demo-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    12
+                </span>
+
+                <div>
+
+                    <h2>Form Submit Event</h2>
+
+                    <p>
+                        Handle form submission using submit()
+                        and prevent the default page reload.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <div class="demo-label">
+                    SIGNUP FORM
+                </div>
+
+
+                <form id="reg-form" class="signup-form">
+
+
+                    <!-- ================= NAME ================= -->
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ================= EMAIL ================= -->
+
+                    <div class="form-group">
+
+                        <label for="useremail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="useremail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ================= GENDER ================= -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Gender
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                    required
+                                >
+
+                                Female
+
+                            </label>
+
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                >
+
+                                Male
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SUBMIT ================= -->
+
+                    <button
+                        type="submit"
+                        id="submit-btn"
+                    >
+                        Submit Form
+                    </button>
+
+
+                </form>
+
+
+                <!-- ================= OUTPUT ================= -->
+
+                <div
+                    id="form-output"
+                    class="demo-output"
+                >
+
+                    Fill the form and click Submit.
+
+                </div>
+
+            </div>
+
+        </section>
+
+            </main>
+
+<!-- =====================================================
+     PART 9 — AJAX
+====================================================== -->
+
+<section class="learning-section ajax-section">
+
+    <div class="section-heading">
+
+        <span class="topic-number">09</span>
+
+        <div>
+            <p class="section-label">SERVER COMMUNICATION</p>
+
+            <h2>AJAX with jQuery</h2>
+
+            <p>
+                Send and receive data from a server
+                without reloading the page.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         GET REQUEST
+    ================================================== -->
+
+    <div class="ajax-card">
+
+        <div class="ajax-card-header">
+
+            <div class="ajax-icon">
+                GET
+            </div>
+
+            <div>
+                <h3>$.get()</h3>
+
+                <p>
+                    Fetch data from a server.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="code-explanation">
+
+            <code>
+                $.get(URL, callback)
+            </code>
+
+        </div>
+
+
+        <button id="ajax-get-btn" class="demo-btn">
+            Fetch Data
+        </button>
+
+
+        <div id="get-output" class="ajax-output">
+
+            Click the button to send a GET request.
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         POST REQUEST
+    ================================================== -->
+
+    <div class="ajax-card">
+
+        <div class="ajax-card-header">
+
+            <div class="ajax-icon post-icon">
+                POST
+            </div>
+
+            <div>
+                <h3>$.post()</h3>
+
+                <p>
+                    Send data to a server.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="code-explanation">
+
+            <code>
+                $.post(URL, data, callback)
+            </code>
+
+        </div>
+
+
+        <button id="ajax-post-btn" class="demo-btn">
+            Send Data
+        </button>
+
+
+        <div id="post-output" class="ajax-output">
+
+            Click the button to send data.
+
+        </div>
+
+    </div>
+
+
+</section>
+    <!-- =====================================================
+         jQuery Library
+    ====================================================== -->
+
+    <script
+        src="https://code.jquery.com/jquery-4.0.0.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         Our JavaScript File
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
